@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:id="@+id/linearLayout1"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<TableLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:stretchColumns="0|1"
+		android:layout_gravity="center_horizontal">
+
+		<TableRow>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="right"
+				android:text="P : " />
+			<TextView
+				android:id="@+id/pos"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="not supported" />
+		</TableRow>
+
+		<TableRow>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="right"
+				android:text="X : " />
+			<TextView
+				android:id="@+id/x"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="not supported" />
+		</TableRow>
+
+		<TableRow>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="right"
+				android:text="Y : " />
+			<TextView
+				android:id="@+id/y"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="not supported" />
+		</TableRow>
+
+		<TableRow>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="right"
+				android:text="Z : " />
+			<TextView
+				android:id="@+id/z"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="not supported" />
+		</TableRow>
+	</TableLayout>
+	<ImageView
+		android:id="@+id/imageView1"
+		android:src="@drawable/icon"
+		android:layout_width="122dp"
+		android:layout_height="62dp"></ImageView>
+
+</LinearLayout>
