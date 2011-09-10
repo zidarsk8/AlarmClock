@@ -8,17 +8,16 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class AccelerometerMonitorActivity extends Activity implements AccelerometerListener{
+public class AccelerometerMonitorActivity extends Activity implements  AccelerometerListener	{
 	private static Context CONTEXT;
 	private int mBufferSize = 50;
 	private int mCurPos = 0;
 	private boolean mSaving = false;
 	private StringBuffer mStatsBuffer;
-	private ImageView mGraphImage;
+	//private ImageView mGraphImage;
 	
 	boolean mExternalStorageAvailable = false;
 	boolean mExternalStorageWriteable = false;
@@ -38,7 +37,7 @@ public class AccelerometerMonitorActivity extends Activity implements Accelerome
 	}
 	
 	private void init(){
-		mGraphImage = (ImageView) findViewById(R.id.imageView1);
+		//mGraphImage = (ImageView) findViewById(R.id.imageView1);
 		String state = Environment.getExternalStorageState();
 		if (Environment.MEDIA_MOUNTED.equals(state)) {
 		    mExternalStorageAvailable = mExternalStorageWriteable = true;
