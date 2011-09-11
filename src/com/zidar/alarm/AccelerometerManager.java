@@ -1,4 +1,4 @@
-package com.zidar.accelerometer;
+package com.zidar.alarm;
 
 import java.util.List;
 
@@ -8,6 +8,7 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.util.Log;
+import com.zidar.alarm.R;
 
 /**
  * Android Accelerometer Sensor Manager Archetype

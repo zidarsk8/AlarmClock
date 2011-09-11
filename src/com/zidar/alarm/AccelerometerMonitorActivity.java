@@ -1,4 +1,4 @@
-package com.zidar.accelerometer;
+package com.zidar.alarm;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -10,6 +10,7 @@ import android.os.Environment;
 import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.zidar.alarm.R;
 
 public class AccelerometerMonitorActivity extends Activity implements  AccelerometerListener	{
 	private static Context CONTEXT;

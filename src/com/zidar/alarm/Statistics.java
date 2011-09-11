@@ -1,5 +1,6 @@
-package com.zidar.accelerometer;
+package com.zidar.alarm;
 
+import com.zidar.alarm.R;
 import java.util.LinkedList;
 
 public class Statistics {
