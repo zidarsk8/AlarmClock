@@ -6,4 +6,6 @@
     <string name="AlarmList_add">Add alarm</string>
     <string name="AlarmEdit_done">Done</string>
     <string name="AlarmEdit_bio">Use our fancy bio feature</string>
+    <string name="AlarmEdit_description">Description...</string>
+    <string name="AlarmEdit_sound">Set alarm sound</string>
 </resources>

@@ -3,14 +3,22 @@
 	android:layout_width="match_parent" android:id="@+id/linearLayout1"
 	android:layout_height="match_parent" android:orientation="vertical">
 	<TimePicker android:layout_height="wrap_content" android:id="@+id/alarm_time"
-		android:layout_margin="10px" android:layout_width="wrap_content"
+		android:layout_margin="5px" android:layout_width="wrap_content"
 		android:layout_gravity="center"></TimePicker>
+	<EditText android:layout_height="wrap_content"
+		android:layout_margin="5px" android:hint="@string/AlarmEdit_description"
+		android:layout_width="match_parent" android:id="@+id/description">
+		<requestFocus></requestFocus>
+	</EditText>
+	<Button android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:id="@+id/sound"
+		android:text="@string/AlarmEdit_sound"></Button>
 	<CheckBox android:layout_height="wrap_content"
-		android:layout_margin="10px" android:layout_width="wrap_content"
+		android:layout_margin="5px" android:layout_width="wrap_content"
 		android:id="@+id/bio" android:text="@string/AlarmEdit_bio"></CheckBox>
 	<Button android:text="@string/AlarmEdit_done" android:id="@+id/done"
 		android:layout_height="wrap_content" android:layout_width="match_parent"
-		android:layout_margin="10px"></Button>
+		android:layout_margin="5px"></Button>
 
 
 </LinearLayout>
