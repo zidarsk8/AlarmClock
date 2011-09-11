@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hello">Hello World, AccelerometerMonitorActivity!</string>
-    <string name="app_name">AccelerometerMonitor</string>
+    <string name="app_name">NekiAlarm</string>
+    <string name="AlarmList_footer">Some random amazing text! </string>
+    <string name="AlarmList_add">Add alarm</string>
 </resources>
