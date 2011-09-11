@@ -1,8 +1,12 @@
 package com.zidar.alarm;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 
 public class AlarmListActivity extends ListActivity {
 
@@ -14,5 +18,14 @@ public class AlarmListActivity extends ListActivity {
 		setContentView(R.layout.list);
 		
 		setListAdapter(new ArrayAdapter<String>(this, R.layout.list_item, FAKE_ALARMS));
+		
+		Button add = (Button)findViewById(R.id.add_alarm);
+		add.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {				
+				startActivity(new Intent(AlarmListActivity.this, AlarmEditActivity.class));
+			}
+		});
 	}
 }
