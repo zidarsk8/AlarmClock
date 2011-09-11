@@ -25,7 +25,8 @@ public final class R {
     }
     public static final class layout {
         public static final int list=0x7f030000;
-        public static final int main=0x7f030001;
+        public static final int list_item=0x7f030001;
+        public static final int main=0x7f030002;
     }
     public static final class string {
         public static final int AlarmList_add=0x7f040003;
