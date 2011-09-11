@@ -6,7 +6,8 @@
 	<LinearLayout android:layout_width="fill_parent"
 		android:layout_height="fill_parent" android:orientation="vertical"
 		android:id="@+id/linearLayout1" android:layout_alignParentTop="true"
-		android:layout_alignParentLeft="true">
+		android:layout_alignParentLeft="true"
+		android:paddingBottom="60px">
 		<Button android:text="@string/AlarmList_add" android:id="@+id/add_alarm"
 			android:layout_margin="10px" android:layout_width="fill_parent"
 

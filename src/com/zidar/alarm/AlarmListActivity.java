@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 public class AlarmListActivity extends ListActivity {
 
-	static final String[] FAKE_ALARMS = new String[]{ "Fake alarm 8:00", "Fake alarm 10:00", "Fake alarm 9:00", "Fake alarm 1:00", "Fake alarm 12:00", "Fake alarm 10:00", "Fake alarm 9:00", "Fake alarm 1:00", "Fake alarm 12:00", "Fake alarm 10:00", "Fake alarm 9:00", "Fake alarm 1:00", "Fake alarm 12:00" };
+	static final String[] FAKE_ALARMS = new String[]{ "8:00", "10:00", "9:00", "1:00", "12:00", "10:00", "9:00", "1:00", "12:00", "10:00", "9:00", "1:00", "12:00"};
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -38,7 +38,7 @@ public class AlarmListActivity extends ListActivity {
 	static class ViewHolder{
 		
 		private TextView v1;
-		private TextView v2;
+		private Button b;
 	}
 	
 	private class MyAdapter extends ArrayAdapter<String>{
@@ -59,13 +59,15 @@ public class AlarmListActivity extends ListActivity {
 				v = vi.inflate(R.layout.list_item, null);
 				ViewHolder vh = new ViewHolder();
 				vh.v1 = (TextView) v.findViewById(R.id.list_item_text);
+			    vh.b = (Button) v.findViewById(R.id.list_item_button);
 				v.setTag(vh);
 			}
 			String a = alarms[position];
 			if (a != null){
 				
 				ViewHolder vh = (ViewHolder) v.getTag();
-				vh.v1.setText(a);
+				vh.v1.setText("Some awesome decription text");
+				vh.b.setText(a);
 				
 			}
 			return v;
