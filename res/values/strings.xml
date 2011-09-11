@@ -4,4 +4,5 @@
     <string name="app_name">NekiAlarm</string>
     <string name="AlarmList_footer">Some random amazing text! </string>
     <string name="AlarmList_add">Add alarm</string>
+    <string name="AlarmEdit_done">Done</string>
 </resources>
