@@ -14,18 +14,16 @@ public final class R {
         public static final int icon=0x7f020000;
     }
     public static final class id {
-        public static final int add_alarm=0x7f050005;
-        public static final int done=0x7f050004;
-        public static final int hour=0x7f050001;
-        public static final int imageView1=0x7f05000b;
+        public static final int add_alarm=0x7f050003;
+        public static final int alarm_time=0x7f050001;
+        public static final int done=0x7f050002;
+        public static final int imageView1=0x7f050009;
         public static final int linearLayout1=0x7f050000;
-        public static final int minutes=0x7f050003;
-        public static final int numberPicker1=0x7f050002;
-        public static final int pos=0x7f050007;
-        public static final int top_text=0x7f050006;
-        public static final int x=0x7f050008;
-        public static final int y=0x7f050009;
-        public static final int z=0x7f05000a;
+        public static final int pos=0x7f050005;
+        public static final int top_text=0x7f050004;
+        public static final int x=0x7f050006;
+        public static final int y=0x7f050007;
+        public static final int z=0x7f050008;
     }
     public static final class layout {
         public static final int edit=0x7f030000;

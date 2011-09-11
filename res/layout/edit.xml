@@ -2,18 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent" android:id="@+id/linearLayout1"
 	android:layout_height="match_parent" android:orientation="vertical">
-	<LinearLayout android:layout_width="match_parent"
-		android:layout_height="wrap_content" android:id="@+id/hour" android:padding="10px">
-		<android.widget.NumberPicker
-
-
-			android:layout_width="wrap_content" android:id="@+id/numberPicker1"
-			android:layout_height="wrap_content"></android.widget.NumberPicker>
-		<android.widget.NumberPicker android:id="@+id/minutes"
-
-
-			android:layout_width="wrap_content" android:layout_height="wrap_content"></android.widget.NumberPicker>
-	</LinearLayout>
+    <TimePicker android:layout_height="wrap_content" android:id="@+id/alarm_time" android:layout_width="wrap_content" android:layout_gravity="center"></TimePicker>
 	<Button android:text="@string/AlarmEdit_done" android:id="@+id/done"
 		android:layout_height="wrap_content" android:layout_width="match_parent"
 		android:layout_margin="10px"></Button>
