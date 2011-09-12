@@ -23,7 +23,7 @@ public class AlarmListActivity extends ListActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.list);
 		
-		setListAdapter(new MyAdapter(this, R.layout.list_item, FAKE_ALARMS));
+		setListAdapter(new AlarmAdapter(this, R.layout.list_item, FAKE_ALARMS));
 		
 		Button add = (Button)findViewById(R.id.add_alarm);
 		add.setOnClickListener(new OnClickListener() {
@@ -38,15 +38,14 @@ public class AlarmListActivity extends ListActivity {
 	static class ViewHolder{
 		
 		private TextView v1;
-		private Button b;
 	}
 	
-	private class MyAdapter extends ArrayAdapter<String>{
+	private class AlarmAdapter extends ArrayAdapter<String>{
 		
 		LayoutInflater vi = (LayoutInflater) AlarmListActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		private final String[] alarms;
 		
-		public MyAdapter(final Context context, final int resId, final String[] alarms){
+		public AlarmAdapter(final Context context, final int resId, final String[] alarms){
 			super(context, resId, alarms);
 			this.alarms = alarms;
 		}
