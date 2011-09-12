@@ -59,15 +59,15 @@ public class AlarmListActivity extends ListActivity {
 				v = vi.inflate(R.layout.list_item, null);
 				ViewHolder vh = new ViewHolder();
 				vh.v1 = (TextView) v.findViewById(R.id.list_item_text);
-			    vh.b = (Button) v.findViewById(R.id.list_item_button);
+			//    vh.b = (Button) v.findViewById(R.id.list_item_button);
 				v.setTag(vh);
 			}
 			String a = alarms[position];
 			if (a != null){
 				
 				ViewHolder vh = (ViewHolder) v.getTag();
-				vh.v1.setText("Some awesome decription text");
-				vh.b.setText(a);
+				//vh.v1.setText("Some awesome decription text!!");
+			//	vh.b.setText(a);
 				
 			}
 			return v;
